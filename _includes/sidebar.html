@@ -69,7 +69,7 @@
 
       {% case entry.type %}
         {% when 'github' %}
-          {% assign url = append: site.url %}
+          {% assign  url = 'https://github.com/' | append: site.github.username %}
         {% when 'twitter' %}
           {% assign url = 'https://twitter.com/' | append: site.twitter.username %}
         {% when 'email' %}
