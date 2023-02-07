@@ -1,4 +1,3 @@
-# uncomment these lines to use in a different repo
 
 #git clone https://github.com/ChenPeleg/chirpy-docs.git ./jeklly-site
 #rm -rf ./jeklly-site/docs
@@ -13,6 +12,8 @@ else
     echo "This process requires at leaset an docs/index.md file"
     exit 1
 fi
+echo "=== copy all the site files to root dir ==="
+cp -r ./docs/site/. ./
 echo "=== copy docs to _tabs ==="
 mv ./docs/index.md ./index.md
 cp -r ./docs/. ./_tabs
@@ -22,3 +23,4 @@ ls | xargs -I {} mv {} 2023-2-2-{}
 cd ..
 echo "=== copying the post files (with dates) to _posts ==="
 cp -r ./docs/. ./_posts
+
