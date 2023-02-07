@@ -1,5 +1,7 @@
 <div align="center">
+  # Modifications
 
+  This is a modified version of the chirpy to fit a very small doc theme
   # Chirpy Jekyll Theme
 
   A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
